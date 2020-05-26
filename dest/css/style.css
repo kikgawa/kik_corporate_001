@@ -1872,9 +1872,6 @@ pre {
     border-color: #404040;
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.25); }
-  .form-control::-webkit-input-placeholder {
-    color: #6c757d;
-    opacity: 1; }
   .form-control::-moz-placeholder {
     color: #6c757d;
     opacity: 1; }
@@ -3685,11 +3682,13 @@ input[type="button"].btn-block {
     background-color: #000;
     border: 0;
     border-radius: 1rem;
+    -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     -webkit-appearance: none;
             appearance: none; }
     @media (prefers-reduced-motion: reduce) {
       .custom-range::-webkit-slider-thumb {
+        -webkit-transition: none;
         transition: none; } }
     .custom-range::-webkit-slider-thumb:active {
       background-color: #595959; }
@@ -3707,11 +3706,13 @@ input[type="button"].btn-block {
     background-color: #000;
     border: 0;
     border-radius: 1rem;
+    -moz-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     -moz-appearance: none;
          appearance: none; }
     @media (prefers-reduced-motion: reduce) {
       .custom-range::-moz-range-thumb {
+        -moz-transition: none;
         transition: none; } }
     .custom-range::-moz-range-thumb:active {
       background-color: #595959; }
@@ -3732,10 +3733,12 @@ input[type="button"].btn-block {
     background-color: #000;
     border: 0;
     border-radius: 1rem;
+    -ms-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     appearance: none; }
     @media (prefers-reduced-motion: reduce) {
       .custom-range::-ms-thumb {
+        -ms-transition: none;
         transition: none; } }
     .custom-range::-ms-thumb:active {
       background-color: #595959; }

@@ -4,12 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "Minori Kikugawa",
   "license": "MIT",
+  "homepage": "https://minocolor.github.io/dest/",
   "devDependencies": {
-    "autoprefixer": "^9.6.1",
+    "autoprefixer": "^9.8.0",
     "browser-sync": "^2.26.7",
     "css-mqpacker": "^7.0.0",
     "csswring": "^7.0.0",
@@ -19,7 +22,7 @@
     "gulp-concat": "^2.6.1",
     "gulp-cssimport": "^7.0.0",
     "gulp-cssnano": "^2.1.3",
-    "gulp-imagemin": "^6.0.0",
+    "gulp-imagemin": "^7.1.0",
     "gulp-postcss": "^8.0.0",
     "gulp-prettify": "^0.5.0",
     "gulp-pug": "^4.0.1",
@@ -29,6 +32,7 @@
     "run-sequence": "^2.2.1"
   },
   "dependencies": {
-    "npm": "^6.10.3"
+    "gh-pages": "^2.2.0",
+    "npm": "^6.14.5"
   }
 }
