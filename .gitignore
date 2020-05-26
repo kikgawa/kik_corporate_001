@@ -34,7 +34,6 @@ nbproject
 node_modules
 bower
 dist
-dest
 lib-cov
 lcov.info
 pids
