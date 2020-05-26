@@ -1,0 +1,15 @@
+.cz-list-simulation{
+  .row{
+    margin-left:-5px;
+    margin-right:-5px;
+  }
+  .col-auto:first-child{
+    width:35px;
+  }
+  .col-auto{
+    font-size:10px;
+    padding:0 5px;
+    width:75px;
+    text-align: center;
+  }
+}

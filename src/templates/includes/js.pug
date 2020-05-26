@@ -1,0 +1,14 @@
+script(src="js/swiper.min.js")
+script(src="js/micromodal.min.js")
+script.
+  MicroModal.init();
+script.
+  var itemSlide = new Swiper('.item-keyvisual', {
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  });

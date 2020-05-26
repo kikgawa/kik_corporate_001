@@ -1,0 +1,58 @@
+extend layouts/layout
+block body
+  - var bodyclass = 'bg-black header-on';
+  body(class=bodyclass)
+  block body
+    include includes/header
+    .mb-5
+      .jumbotron.jumbotron-xl(style="background-image:url(img/about/jumbotron-01.jpg)")
+        .jumbotron__overlay
+          .jumbotron__contents.container
+              h1.text-xxxxxl.mb-4
+                | ABOUT-01
+              .text-left.mb-4
+                .hr-white
+              .text-xl.mb-4
+                | ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。
+                br
+                | ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。
+    .mb-5
+      .jumbotron.jumbotron-xl.mb-5(style="background-image:url(img/about/jumbotron-02.jpg)")
+        .jumbotron__overlay
+          .jumbotron__contents.container.text-md-right
+              h1.text-xxxxxl.mb-4
+                | ABOUT-02
+              .text-left.text-md-right.mb-4
+                .hr-white
+              .text-xl.mb-4
+                | ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。
+                br
+                | ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。
+    .mb-5
+      .jumbotron.jumbotron-xl(style="background-image:url(img/about/jumbotron-03.jpg)")
+        .jumbotron__overlay
+          .jumbotron__contents.container
+              h1.text-xxxxxl.mb-4
+                | ABOUT-03
+              .text-left.mb-4
+                .hr-white
+              .text-xl.mb-4
+                | ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。
+                br
+                | ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。
+    .mb-5
+      .jumbotron.jumbotron-xl.mb-5(style="background-image:url(img/about/jumbotron-04.jpg)")
+        .jumbotron__overlay
+          .jumbotron__contents.container.text-md-right
+              h1.text-xxxxxl.mb-4
+                | ABOUT-04
+              .text-left.text-md-right.mb-4
+                .hr-white
+              .text-xl.mb-4
+                | ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。
+                br
+                | ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。
+
+    include includes/footer
+    script(src="js/jquery-3.4.1.min.js")
+    script(src="js/common.js")

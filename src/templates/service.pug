@@ -1,0 +1,188 @@
+extend layouts/layout
+block body
+  - var bodyclass = 'header-on';
+  body(class=bodyclass)
+  block body
+    include includes/header
+    .jumbotron(style="background-image:url(img/service/jumbotron.jpg)")
+      .jumbotron__overlay
+        .jumbotron__contents.container
+            h1.text-xxxxxl.mb-3.mt-sm-5.pt-sm-5.text-center
+              | Service
+            .text-center.mb-3
+              | 〇〇では3つの事業を主軸としています。
+              br
+              | 各事業内容についての詳細は以下をご確認ください。
+            .hr-white-90
+    .local-nav.border-bottom
+      .container
+        .tab-group.row.justify-content-center.no-gutters.text-lg.py-1.py-md-0.font-weight-bold
+          .tab.col-auto.px-1.px-md-4.is-active
+            .py-1.py-md-4 01：〇〇事業
+          .tab.col-auto.px-1.px-md-4
+            .py-1.py-md-4 02：〇〇事業
+          .tab.col-auto.px-1.px-md-4
+            .py-1.py-md-4 03：〇〇事業
+    .panel-group
+      .panel.is-show
+        section.section.py-4.py-md-7
+          .container
+            .section__header
+              .text-center
+                .text-xxxxl Mission
+                .text-xxl.lh-16.py-3
+                  | この文章はダミーです。文字の大きさ、量、字間、
+                  br
+                  | 行間等を確認するために入れています。
+
+
+        .section-background-img(style="background-image:url(img/service/figure-mission-01.jpg); ")
+
+        section.section.py-4.py-md-7
+          .container
+            .section__header.mb-4.mb-md-6
+              .text-center
+                .text-xxxxl Our Values
+            .section__body
+              .row.gutter-lg
+                .col-12.col-md-6.col-xl-4.mb-2.mb-md-5.mb-xl-5.row.no-gutters
+                  .border.p-2.p-md-5
+                    .text-xxxl.mb-2.mb-md-3.text-gray.text-center 01
+                    .text-xxl.mb-3.mb-md-4.text-center.font-weight-bold
+                      | Values Title
+                    p.text.mb-0.text-center
+                      | この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーで
+                .col-12.col-md-6.col-xl-4.mb-2.mb-md-5.mb-xl-5.row.no-gutters
+                  .border.p-2.p-md-5
+                    .text-xxxl.mb-2.mb-md-3.text-gray.text-center 02
+                    .text-xxl.mb-3.mb-md-4.text-center.font-weight-bold
+                      | Values Title
+                    p.text.mb-0.text-center
+                      | この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーで
+                .col-12.col-md-6.col-xl-4.mb-2.mb-md-5.mb-xl-5.row.no-gutters
+                  .border.p-2.p-md-5
+                    .text-xxxl.mb-2.mb-md-3.text-gray.text-center 03
+                    .text-xxl.mb-3.mb-md-4.text-center.font-weight-bold
+                      | Values Title
+                    p.text.mb-0.text-center
+                      | この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーで
+                .col-12.col-md-6.col-xl-4.mb-2.mb-md-5.mb-xl-0.row.no-gutters
+                  .border.p-2.p-md-5
+                    .text-xxxl.mb-2.mb-md-3.text-gray.text-center 04
+                    .text-xxl.mb-3.mb-md-4.text-center.font-weight-bold
+                      | Values Title
+                    p.text.mb-0.text-center
+                      | この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーで
+                .col-12.col-md-6.col-xl-4.mb-2.mb-md-0.mb-xl-0.row.no-gutters
+                  .border.p-2.p-md-5
+                    .text-xxxl.mb-2.mb-md-3.text-gray.text-center 05
+                    .text-xxl.mb-3.mb-md-4.text-center.font-weight-bold
+                      | Values Title
+                    p.text.mb-0.text-center
+                      | この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーで
+
+      .panel
+        section.section.py-4.py-md-7
+          .container
+            .section__header
+              .text-center
+                .text-xxxxl Mission
+                .text-xxl.lh-16.py-3
+                  | この文章はダミーです。文字の大きさ、量、字間、
+                  br
+                  | 行間等を確認するために入れています。
+
+        .section-background-img(style="background-image:url(img/service/figure-mission-02.jpg); ")
+
+        section.section.py-4.py-md-7
+          .container
+            .section__header.mb-4.mb-md-6
+              .text-center
+                .text-xxxxl Our Values
+            .section__body
+              .row.gutter-lg
+                .col-12.col-md-6.col-xl-4.mb-2.mb-md-5.mb-xl-5.row.no-gutters
+                  .border.p-2.p-md-5
+                    .text-xxxl.mb-2.mb-md-3.text-gray.text-center 01
+                    .text-xxl.mb-3.mb-md-4.text-center.font-weight-bold
+                      | Values Title
+                    p.text.mb-0.text-center
+                      | この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーで
+                .col-12.col-md-6.col-xl-4.mb-2.mb-md-5.mb-xl-5.row.no-gutters
+                  .border.p-2.p-md-5
+                    .text-xxxl.mb-2.mb-md-3.text-gray.text-center 02
+                    .text-xxl.mb-3.mb-md-4.text-center.font-weight-bold
+                      | Values Title
+                    p.text.mb-0.text-center
+                      | この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーで
+                .col-12.col-md-6.col-xl-4.mb-2.mb-md-0.mb-xl-5.row.no-gutters
+                  .border.p-2.p-md-5
+                    .text-xxxl.mb-2.mb-md-3.text-gray.text-center 03
+                    .text-xxl.mb-3.mb-md-4.text-center.font-weight-bold
+                      | Values Title
+                    p.text.mb-0.text-center
+                      | この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーで
+
+      .panel
+        section.section.py-4.py-md-7
+          .container
+            .section__header
+              .text-center
+                .text-xxxxl Mission
+                .text-xxl.lh-16.py-3
+                  | この文章はダミーです。文字の大きさ、量、字間、
+                  br
+                  | 行間等を確認するために入れています。
+
+        .section-background-img(style="background-image:url(img/service/figure-mission-03.jpg); ")
+
+        section.section.py-4.py-md-7
+          .container
+            .section__header.mb-4.mb-md-6
+              .text-center
+                .text-xxxxl Our Values
+            .section__body
+              .row.gutter-lg
+                .col-12.col-md-6.col-xl-4.mb-2.mb-md-5.mb-xl-5.row.no-gutters
+                  .border.p-2.p-md-5
+                    .text-xxxl.mb-2.mb-md-3.text-gray.text-center 01
+                    .text-xxl.mb-3.mb-md-4.text-center.font-weight-bold
+                      | Values Title
+                    p.text.mb-0.text-center
+                      | この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーで
+                .col-12.col-md-6.col-xl-4.mb-2.mb-md-5.mb-xl-5.row.no-gutters
+                  .border.p-2.p-md-5
+                    .text-xxxl.mb-2.mb-md-3.text-gray.text-center 02
+                    .text-xxl.mb-3.mb-md-4.text-center.font-weight-bold
+                      | Values Title
+                    p.text.mb-0.text-center
+                      | この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーで
+                .col-12.col-md-6.col-xl-4.mb-2.mb-md-0.mb-xl-5.row.no-gutters
+                  .border.p-2.p-md-5
+                    .text-xxxl.mb-2.mb-md-3.text-gray.text-center 03
+                    .text-xxl.mb-3.mb-md-4.text-center.font-weight-bold
+                      | Values Title
+                    p.text.mb-0.text-center
+                      | この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーで
+                .col-12.col-md-6.col-xl-4.mb-2.mb-md-0.mb-xl-5.row.no-gutters
+                  .border.p-2.p-md-5
+                    .text-xxxl.mb-2.mb-md-3.text-gray.text-center 04
+                    .text-xxl.mb-3.mb-md-4.text-center.font-weight-bold
+                      | Values Title
+                    p.text.mb-0.text-center
+                      | この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーで
+
+    include includes/footer
+    include includes/js
+    script(src="js/jquery-3.4.1.min.js")
+    script(src="js/common.js")
+    script.
+      jQuery(function($){
+        $('.tab').click(function(){
+          $('.is-active').removeClass('is-active');
+          $(this).addClass('is-active');
+          $('.is-show').removeClass('is-show');
+          const index = $(this).index();
+          $('.panel').eq(index).addClass('is-show');
+        });
+      });

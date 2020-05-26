@@ -1,0 +1,85 @@
+extend layouts/layout
+block body
+  - var bodyclass = 'header-on';
+  body(class=bodyclass)
+  block body
+    include includes/header
+    .jumbotron(style="background-image:url(img/gallery/jumbotron.jpg)")
+      .jumbotron__overlay
+        .jumbotron__contents.container
+            h1.text-xxxxxl.mb-3.mt-sm-5.pt-sm-5.text-center
+              | Gallery
+            .text-center.mb-3
+              | 〇〇が手がけたこれまでの実績をご紹介しております。
+              br
+              | 各事業内容についての詳細は以下をご確認ください。
+            .hr-white-90
+    section.section.py-4.py-md-7
+      .container
+        .section__body
+          .row.gutter-lg
+            .col-12.col-md-4.mb-3.mb-md-6
+              .card.border-0
+                a(href="")
+                  img.card-img-top(src="img/gallery/01.jpg" alt='...')
+                  .card-body.p-0.pt-1.pt-md-3
+                    .text.font-weight-bold
+                      span.font-weight-normal 2020/05/26
+                      br
+                      | キャプションタイトル
+                    p.card-text 中この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。
+            .col-12.col-md-4.mb-3.mb-md-6
+              .card.border-0
+                a(href="")
+                  img.card-img-top(src="img/gallery/02.jpg" alt='...')
+                  .card-body.p-0.pt-1.pt-md-3
+                    .text.font-weight-bold
+                      span.font-weight-normal 2020/05/26
+                      br
+                      | キャプションタイトル
+                    p.card-text 中この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。
+            .col-12.col-md-4.mb-3.mb-md-6
+              .card.border-0
+                a(href="")
+                  img.card-img-top(src="img/gallery/03.jpg" alt='...')
+                  .card-body.p-0.pt-1.pt-md-3
+                    .text.font-weight-bold
+                      span.font-weight-normal 2020/05/26
+                      br
+                      | キャプションタイトル
+                    p.card-text 中この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。
+            .col-12.col-md-4.mb-3.mb-md-0
+              .card.border-0
+                a(href="")
+                  img.card-img-top(src="img/gallery/01.jpg" alt='...')
+                  .card-body.p-0.pt-1.pt-md-3
+                    .text.font-weight-bold
+                      span.font-weight-normal 2020/05/26
+                      br
+                      | キャプションタイトル
+                    p.card-text 中この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。
+            .col-12.col-md-4.mb-3.mb-md-0
+              .card.border-0
+                a(href="")
+                  img.card-img-top(src="img/gallery/02.jpg" alt='...')
+                  .card-body.p-0.pt-1.pt-md-3
+                    .text.font-weight-bold
+                      span.font-weight-normal 2020/05/26
+                      br
+                      | キャプションタイトル
+                    p.card-text 中この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。
+            .col-12.col-md-4.mb-0.mb-md-0
+              .card.border-0
+                a(href="")
+                  img.card-img-top(src="img/gallery/03.jpg" alt='...')
+                  .card-body.p-0.pt-1.pt-md-3
+                    .text.font-weight-bold
+                      span.font-weight-normal 2020/05/26
+                      br
+                      | キャプションタイトル
+                    p.card-text 中この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。
+
+    include includes/footer
+    include includes/js
+    script(src="js/jquery-3.4.1.min.js")
+    script(src="js/common.js")

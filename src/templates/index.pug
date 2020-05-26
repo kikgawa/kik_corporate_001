@@ -1,0 +1,106 @@
+extend layouts/layout
+block body
+  - var bodyclass = 'header-on';
+  body(class=bodyclass)
+  block body
+    include includes/header
+    .jumbotron.jumbotron-lg(style="background-image:url(img/index/jumbotron.jpg)")
+      .jumbotron__overlay
+        .jumbotron__contents.container
+            h1.text-xxxxxl.mb-4.mt-md-5.pt-md-5
+              | Next
+              br
+              | Generation
+              br
+              | Technology
+            a.btn.btn-black(href="about.html") ABOUT PAGE
+    section.section.py-4.py-md-7
+      .container
+        .section__header.mb-5
+          .text-center
+            .text-xxxxl SERVICE
+            .text.py-3
+              | 〇〇では3つの事業を主軸としています。
+              br
+              | 各事業内容についての詳細は以下をご確認ください
+
+            a(href="service.html")
+              u
+                span.text-black VIEW SERVICE
+        .section__body
+          .row.gutter-lg
+            .col-12.col-md-6.col-xl-4.mb-2.mb-md-5.mb-xl-0.row.no-gutters
+              .border.w-100
+                .p-3
+                  .row.no-gutters
+                    .col-auto.mr-3
+                      .text-xxxl.text-gray 01
+                    .col
+                      .text-lg.mb-1.font-weight-bold
+                        | Service-01
+                      p.text.mb-0
+                        | この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。
+            .col-12.col-md-6.col-xl-4.mb-2.mb-md-5.mb-xl-0.row.no-gutters
+              .border.w-100
+                .p-3
+                  .row.no-gutters
+                    .col-auto.mr-3
+                      .text-xxxl.text-gray 02
+                    .col
+                      .text-lg.mb-1.font-weight-bold
+                        | Service-02
+                      p.text.mb-0
+                        | この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。
+            .col-12.col-md-6.col-xl-4.mb-2.mb-md-0.mb-xl-0.row.no-gutters
+              .border.w-100
+                .p-3
+                  .row.no-gutters
+                    .col-auto.mr-3
+                      .text-xxxl.text-gray 03
+                    .col
+                      .text-lg.mb-1.font-weight-bold
+                        | Service-03
+                      p.text.mb-0
+                        | この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。
+    section.section.py-4.py-md-7.bg-black.text-white
+      .container
+        .section__header.mb-5
+          .text-center
+            .text-xxxxl COMPANY
+            .text.py-3
+              | 会社情報等の詳細は
+              a(href="company.html")
+                u.text-white こちらへ
+        .section__body
+          .row.gutter-lg
+            .col-12.col-md-6.mb-2.mb-md-0
+              .card.border-0
+                a(href="company.html")
+                  img.card-img-top(src="img/index/company-01.jpg" alt='...')
+                  .card-body.text-center
+                    .text-lg.font-weight-bold INFORMATION
+                    p.card-text 会社概要
+            .col-12.col-md-6.mb-2.mb-md-0
+              .card.border-0
+                a(href="https://www.generation-eye.com/",target="_blank")
+                  img.card-img-top(src="img/index/company-02.jpg" alt='...')
+                  .card-body.text-center.text-black
+                    .text-lg.font-weight-bold Access
+                    p.card-text アクセス
+    section.section.py-4.py-md-7
+      .container
+        .section__header.mb-md-5
+          .text-center
+            .text-xxxxl News by Facebook
+            .text.py-3
+              | 最新情報を発信しています
+            a(href="https://www.facebook.com/facebookappJapan/",target="_blank")
+              u
+                span.text-black VIEW ALL NEWS
+                span.text-gray-dark-99 - OFFICIAL FACEBOOK PAGE
+        .section__body.d-none.d-md-block
+          .text-center.p-4.border
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FfacebookappJapan%2F&tabs=timeline&width=500&heiht=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=686663738013259" width="500" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+    include includes/footer
+    script(src="js/jquery-3.4.1.min.js")
+    script(src="js/common.js")

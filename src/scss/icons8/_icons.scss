@@ -1,0 +1,65 @@
+// Icons
+// -------------------------
+
+.icons8-facebook----:before,
+.icons8-twitter-----:before,
+.icons8-twitter------2:before,
+.icons8--------:before,
+.icons8---------2:before,
+.icons8------:before,
+.icons8-youtube:before,
+.icons8-------:before,
+.icons8--------2:before,
+.icons8---------3:before,
+.icons8---------4:before,
+.icons8---------5:before,
+.icons8---:before,
+.icons8----2:before,
+.icons8----:before,
+.icons8-----2:before,
+.icons8-----3:before,
+.icons8-----4:before,
+.icons8-ok:before,
+.icons8-ok-2:before,
+.icons8----3:before,
+.icons8----4:before,
+.icons8-----:before,
+.icons8------2:before,
+.icons8--------3:before,
+.icons8--------4:before,
+.icons8-------2:before,
+.icons8-------3:before,
+[data-icons8]:before {
+  @include icons8-font;
+}
+
+[data-icons8]:before { content: attr(data-icons8); }
+
+.icons8-facebook----:before {content: $icons8-var-facebook----;}
+.icons8-twitter-----:before {content: $icons8-var-twitter-----;}
+.icons8-twitter------2:before {content: $icons8-var-twitter------2;}
+.icons8--------:before {content: $icons8-var--------;}
+.icons8---------2:before {content: $icons8-var---------2;}
+.icons8------:before {content: $icons8-var------;}
+.icons8-youtube:before {content: $icons8-var-youtube;}
+.icons8-------:before {content: $icons8-var-------;}
+.icons8--------2:before {content: $icons8-var--------2;}
+.icons8---------3:before {content: $icons8-var---------3;}
+.icons8---------4:before {content: $icons8-var---------4;}
+.icons8---------5:before {content: $icons8-var---------5;}
+.icons8---:before {content: $icons8-var---;}
+.icons8----2:before {content: $icons8-var----2;}
+.icons8----:before {content: $icons8-var----;}
+.icons8-----2:before {content: $icons8-var-----2;}
+.icons8-----3:before {content: $icons8-var-----3;}
+.icons8-----4:before {content: $icons8-var-----4;}
+.icons8-ok:before {content: $icons8-var-ok;}
+.icons8-ok-2:before {content: $icons8-var-ok-2;}
+.icons8----3:before {content: $icons8-var----3;}
+.icons8----4:before {content: $icons8-var----4;}
+.icons8-----:before {content: $icons8-var-----;}
+.icons8------2:before {content: $icons8-var------2;}
+.icons8--------3:before {content: $icons8-var--------3;}
+.icons8--------4:before {content: $icons8-var--------4;}
+.icons8-------2:before {content: $icons8-var-------2;}
+.icons8-------3:before {content: $icons8-var-------3;}

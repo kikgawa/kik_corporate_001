@@ -1,0 +1,21 @@
+// Font paths
+// -------------------------
+
+@font-face {
+  font-family: "crezit";
+  src: url("../fonts/crezit.eot");
+  src: url("../fonts/crezit.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/crezit.woff2") format("woff2"),
+  url("../fonts/crezit.woff") format("woff"),
+  url("../fonts/crezit.ttf") format("truetype"),
+  url("../fonts/crezit.svg#font") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "crezit";
+    src: url("../fonts/crezit.svg#crezit") format("svg");
+  }
+}

@@ -1,0 +1,36 @@
+.cz-accordion{
+  border-top:1px solid $border-color;
+  border-bottom:1px solid $border-color;
+}
+.cz-accordion-block{
+  .cz-accordion-block__head{
+    border-bottom:1px solid $border-color;
+    margin-left:20px;
+    width:calc(100% - 20px);
+    .cz-accordion-block__head__arrow{
+      transform: rotate(90deg);
+      display:block;
+    }
+    &.open{
+      .cz-accordion-block__head__arrow{
+        transform: rotate(-90deg);
+      }
+    }
+  }
+  .cz-accordion-block__content{
+    border-bottom:1px solid $border-color;
+    margin-left:20px;
+    width:calc(100% - 20px);
+  }
+  &:last-child{
+    .cz-accordion-block__head{
+      border-bottom:1px solid transparent;
+      &.open{
+        border-bottom:1px solid $border-color;
+      }
+    }
+    .cz-accordion-block__content{
+      border-bottom:1px solid transparent;
+    }
+  }
+}

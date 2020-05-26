@@ -1,0 +1,267 @@
+/* //font-size
+12px
+14px
+16px
+18px
+24px
+36px
+48px
+62px
+*/
+
+/* //color
+#ffffff
+#f8f8f8
+#ececec
+#cccccc
+#999999
+#000000
+*/
+
+/* //mgn
+10px
+20px
+30px
+40px
+50px
+80px
+100px
+*/
+
+//icons8
+$icons8-font-path: "../../fonts";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap");
+
+//bootstrap
+$theme-colors: (
+  "gray-light-f8": #f8f8f8,
+  "gray-light-ec": #ececec,
+  "gray": #ccc,
+  "gray-dark-99": #999,
+  "sns-fb": #3b589e,
+  "sns-tw": #2c97df,
+  "black": #000
+);
+$spacer: 40px;
+$spacers: () !default;
+$spacers: map-merge(
+  (
+    0: 0,
+    1: (
+      $spacer * 0.25
+    ),
+    2: (
+      $spacer * 0.5
+    ),
+    3: (
+      $spacer * 0.75
+    ),
+    4: $spacer,
+    5: (
+      $spacer * 1.25
+    ),
+    6: (
+      $spacer * 2
+    ),
+    7: (
+      $spacer * 2.5
+    )
+  ),
+  $spacers
+);
+$font-size-base: 0.875rem;
+$primary: #000;
+$btn-padding-y: 20px;
+$btn-padding-x: 25px;
+$input-btn-line-height: 1;
+$link-color: #000;
+$line-height-base: 1.9;
+$font-family-base: HelveticaNeue, "Open Sans", sans-serif;
+$border-radius: 0;
+$grid-gutter-width: 20px;
+
+$border-color: #ececec;
+$link-hover-decoration: none;
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+);
+
+@import "icons8/styles";
+@import "bootstrap/bootstrap";
+
+//original
+body {
+  padding-top: 50px;
+  @include media-breakpoint-up(sm) {
+    padding-top: 0;
+    position: relative;
+  }
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+a {
+  opacity: 1;
+  transition: all 0.2s;
+  &:hover {
+    opacity: 0.6;
+    transition: all 0.2s;
+  }
+}
+
+.btn-black:hover {
+  opacity: 0.8;
+}
+
+.global-footer {
+  .global-footer__inner {
+    @include media-breakpoint-up(sm) {
+      height: 70px;
+    }
+  }
+}
+.hr {
+  width: 50px;
+  height: 1px;
+  margin: 0 auto;
+  background: #000;
+  @include media-breakpoint-up(sm) {
+  }
+}
+.hr-white {
+  width: 50px;
+  height: 1px;
+  background: #fff;
+  display: inline-block;
+}
+.hr-white-90 {
+  width: 1px;
+  height: 25px;
+  margin: 0 auto;
+  background: #fff;
+  @include media-breakpoint-up(sm) {
+    height: 50px;
+  }
+}
+.lh-16 {
+  line-height: 1.6 !important;
+}
+.row.gutter-lg {
+  margin-left: 0;
+  margin-right: 0;
+  @include media-breakpoint-up(md) {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  @include media-breakpoint-up(lg) {
+    margin-left: -25px;
+    margin-right: -25px;
+  }
+  & > [class^="col"] {
+    padding-left: 0;
+    padding-right: 0;
+    @include media-breakpoint-up(md) {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    @include media-breakpoint-up(lg) {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+  }
+}
+.section-background-img {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 300px;
+  @include media-breakpoint-up(md) {
+    height: 500px;
+  }
+}
+.atos-list {
+  @include media-breakpoint-up(md) {
+    border-left: 1px solid $border-color;
+    border-top: 1px solid $border-color;
+  }
+  .dt {
+    text-align: center;
+    border: 1px solid $border-color;
+    font-weight: bold;
+    justify-content: center;
+    @include media-breakpoint-up(md) {
+      border-right: 0;
+      border-top: 0;
+      border-left: 0;
+    }
+  }
+  .dd {
+    border: 1px solid $border-color;
+    border-top: 0;
+    @include media-breakpoint-up(md) {
+    }
+  }
+  .dt,
+  .dd {
+    display: flex;
+    align-items: center;
+  }
+}
+.card-contact {
+  a {
+    &:hover {
+      opacity: 1;
+      background: #000;
+      color: #fff;
+    }
+  }
+}
+.panel {
+  display: none;
+  &.is-show {
+    display: block;
+    animation: tabAnim ease-in 0.2s;
+  }
+}
+.tab {
+  color: #999;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+    transition: all 0.2s;
+  }
+  &.is-active {
+    color: #000;
+  }
+}
+
+@keyframes tabAnim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@import "form";
+@import "typo";
+@import "header";
+@import "tabs";
+@import "accordion";
+@import "list";
+@import "_jumbotron";
